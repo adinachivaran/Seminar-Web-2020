@@ -5,7 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>iPhone 11 Pro</title>
+    <title>Telefon mobil Samsung Galaxy Note 20</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
 
@@ -16,7 +16,7 @@
         //In folderul assets gasim fotografiile produsului a caror denumire respecta formatul product_main_<color>.webp
         function changeColor(color) {
             var imageElement = document.getElementById('product-image');
-            imageElement.src = "assets/product_main_" + color + ".webp";
+            imageElement.src = "assets/product_main_" + color + ".jpg";
             var titleElement = document.getElementById('product-color-in-title');
             titleElement.innerText = capitalize(color);
         }
@@ -31,12 +31,10 @@
         function updatePrice(version){
             updateVersionInTitle(version);
             var priceTagElement = document.getElementById("pricetag");
-            if(version == 64)
-                priceTagElement.innerText = "4799 RON";
-            else if(version == 256)
-                priceTagElement.innerText = "5199 RON";
+            if(version == 256)
+                priceTagElement.innerText = "3899 RON";
             else if(version == 512)
-                priceTagElement.innerText = "5399 RON";
+                priceTagElement.innerText = "5999 RON";
         }
 
         //Idem ca la actualizarea pretului
@@ -51,24 +49,24 @@
     <div class="container center">
         <div class="product-main">
             <div class="product-image">
-                <img src="assets/product_main_green.webp" id="product-image" />
+                <img src="assets/product_main_green.jpg" id="product-image" />
             </div>
             <div class="product-details">
                 <div class="product-title">
-                    <h3>iPhone 11 Pro Midnight
+                    <h3>Telefon mobil Samsung Galaxy Note 20
                         <span id="product-color-in-title">
                             Green
                         </span> 
-                        <span id="title-version">64</span>
+                        <span id="title-version">256</span>
                         GB</h3>
                 </div>
 
                 <div class="product-main-info">
                     <div class="bottom-border">
                         <p>
-                            Expanded field of view. iPhone 11 Pro lets you zoom from the Telephoto all the way out to
-                            the
-                            new Ultra Wide camera, for an impressive 4x optical zoom range.
+                            Acesta este Galaxy Note20
+
+                            Primul care a imbinat un instrument de scris cu un telefon, Note ti-a pus o lume cu totul noua in buzunar. Pe masura ce ne confruntam cu o noua normalitate, viata cere un nou tip de dispozitiv. Noul Galaxy Note nu este un smartphone obisnuit, ci o suita de calculatoare in buzunarul tau. Acesta este nivelul urmator al jocurilor pe mobil. Aceasta este o camera de nivel profesional, filmare 8K si un set complet de editare. Descopera telefonul puternic care schimba pentru totdeauna modul in care lucrezi si te joci.
                         </p>
                     </div>
                     <div class="product-color">
@@ -90,11 +88,6 @@
                                     onchange="changeColor('silver')">
                                 <label for="silver"><span></span></label>
                             </div>
-                            <div>
-                                <input data-image="grey" type="radio" id="grey" name="color"
-                                    onchange="changeColor('grey')">
-                                <label for="grey"><span></span></label>
-                            </div>
                         </div>
 
                     </div>
@@ -104,14 +97,13 @@
                         <span>Device configuration</span>
 
                         <div class="memsize-choose">
-                            <button onclick="updatePrice(64)">64 GB</button>
                             <button onclick="updatePrice(256)">256 GB</button>
                             <button onclick="updatePrice(512)">512 GB</button>
                         </div>
                     </div>
 
                     <div class="product-price">
-                        <span id="pricetag">4799 RON</span>
+                        <span id="pricetag">3870 RON</span>
                         <a href="#" class="cart-btn">Add to cart</a>
                       </div>
                 </div>
@@ -133,15 +125,11 @@
                 </tr>
                 <tr>
                     <td>Operating system</td>
-                    <td>iOS</td>
+                    <td>Android</td>
                 </tr>
                 <tr>
                     <td>Cores</td>
-                    <td>6</td>
-                </tr>
-                 <tr>
-                    <td>CPU</td>
-                    <td>Apple A13 Bionic</td>
+                    <td>8</td>
                 </tr>
             </tbody>
         </table>
